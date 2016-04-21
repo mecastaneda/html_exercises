@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercise 66</title>
+	<style type="text/css">
+		.box {
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			border-radius: 0px;
+			border: 2px solid midnightblue;
+			width: 60px;
+			height: 60px;
+			animation: morph 1s infinite;
+		}
+		@keyframes morph {
+			0% {
+				border-radius: 0px;
+				transform: rotateY(0deg);
+			}
+			50% {
+				border-radius: 20px;
+			}
+			75% {
+				border-radius: 20px;
+			}
+			100% {
+				border-radius: 0px;
+				transform: rotateY(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+
+	</div>
+
+</body>
+</html>
