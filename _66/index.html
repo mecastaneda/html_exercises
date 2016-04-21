@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="plecka-background"></div>
+<header id="header">
+
+
+	<div id="plecka"></div>
+
+	<div class="navigation">
+
+		<div class="logo-container">
+			<a class="logo" href="#">PayRal</a>
+		</div>
+
+		<nav class="center-menu">
+			<ul id="menuBtns">
+				<li class="menu-item">
+					<a id="personalBtn" href="#">Personal</a>
+					<div class="menu-wrapper" id="submenu-personal">
+						<ul id="header-personal-menu" class="subnav list">
+							<li>
+								<a href="#">Getting Started <em>How to use PayPal</em></a>
+							</li>
+
+							<li>
+								<a href="#">Check Out Securely Online <em>Use your credit cards or other funds</em></a>
+							</li>
+
+							<li>
+								<a href="#">Mobile Retailers <em>Use PayPal in these apps</em></a>
+							</li>
+
+							<li>
+								<a href="#">Mobile Wallet <em>Pay in stores with our app</em></a>
+							</li>
+
+							<li>
+								<a href="#">eBay Payments <em>Speed through checkout on eBay</em></a>
+							</li>
+
+							<li>
+								<a href="#">Shopping and More <em>Deals, gift cards and donations</em></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu-item">
+					<a id="businessBtn" href="#">Business</a>
+					<div class="menu-wrapper" id="submenu-business">
+						<ul id="header-business-menu" class="subnav list">
+							<li>
+								<a href="#">All Business Solutions <em>Merchant services, invoicing and products</em></a>
+							</li>
+							<li>
+								<a href="#">Borrow for Your Business <em>Affordable business loans</em></a>
+							</li>
+							<li>
+								<a href="#">Credit Card Processing <em>Accept debit and credit cards</em></a>
+							</li>
+							<li>
+								<a href="#">Mobile Card Reader <em>Use with your phone or tablet on the go</em></a>
+							</li>
+							<li>
+								<a href="#">Add PayPal to Your Checkout <em>Add the button and accept cards online</em></a>
+							</li>
+							<li>
+								<a href="#">Point of Sale Solutions <em>Get paid in your store</em></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu-item">
+					<a id="sendBtn" href="#">Send</a>
+					<div class="menu-wrapper" id="submenu-send">
+						<form method="get" class="form-inline form-stepper 8ball" id="header-send-money-form" novalidate="novalidate" data-flow-type="8ball" action="#">
+
+						    <div class="step shown" id="send-money-step-1">
+
+						        <div class="send-title">
+						            <strong class="headline medium">Send money in a few clicks</strong>
+						            <a href="#" class="learn-more-link contentLink">Learn more</a>
+						        </div>
+
+						        <div class="controls">
+						            <div class="input-wrapper">
+						                <input class="emailf" name="recipient" type="text" id="recipient" placeholder="Their email or phone number" required="required" autocapitalize="off" autocorrect="off">
+						                <label for="recipient" class="accessAid"></label>
+
+						        		<label for="amount_send" class="accessAid"></label>
+						        		<input class="amount-currency" type="number" min="0" name="amount" id="amount_send" placeholder="Amount" autocapitalize="off" autocorrect="off" required="required" maxlength="17" />
+						        		<select class="currency no-arrow required valid" id="currency_code" name="currencyCode">
+
+						                        <option value="USD">USD</option>
+
+						                        <option value="ALL">ALL</option>
+
+						                        <option value="AUD">AUD</option>
+
+						                        <option value="BRL">BRL</option>
+
+						                        <option value="CAD">CAD</option>
+
+						                        <option value="CHF">CHF</option>
+
+						                        <option value="CZK">CZK</option>
+
+						                        <option value="DKK">DKK</option>
+
+						                        <option value="EUR">EUR</option>
+
+						                        <option value="GBP">GBP</option>
+
+						                        <option value="HKD">HKD</option>
+
+						                        <option value="HUF">HUF</option>
+
+						                        <option value="ILS">ILS</option>
+
+						                        <option value="JPY">JPY</option>
+
+						                        <option value="MXN">MXN</option>
+
+						                        <option value="MYR">MYR</option>
+
+						                        <option value="NOK">NOK</option>
+
+						                        <option value="NZD">NZD</option>
+
+						                        <option value="PHP">PHP</option>
+
+						                        <option value="PLN">PLN</option>
+
+						                        <option value="RUB">RUB</option>
+
+						                        <option value="SEK">SEK</option>
+
+						                        <option value="SGD">SGD</option>
+
+						                        <option value="THB">THB</option>
+
+						                        <option value="TRY">TRY</option>
+
+						                        <option value="TWD">TWD</option>
+
+						                        <option value="ZAR">ZAR</option>
+
+						                </select><label for="currency_code" class="select-arrow"></label>
+
+						                <input type="button" value="Continue" class="btn continue">
+						            </div>
+						        </div>
+
+
+
+						    </div>
+
+						</form>
+					</div>
+				</li>
+				<li class="menu-item">
+					<a id="requestBtn" href="#">Request</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="login-signup">
+			<a id="login" href="#">Log In</a>
+			<a id="signup" href="#">Sign Up</a>
+		</div>
+
+	</div>
+
+	<div id="closeBtn">
+
+	</div>
+
+
+</header>
+
+
+<script type="text/javascript">
+	'use strict';
+
+	var header = document.getElementById("header");
+	var menuBtns = document.getElementById("menuBtns");
+
+	var closeBtn = document.getElementById("closeBtn");
+
+	var mainMenuBtns = {
+		personalBtn: document.getElementById("personalBtn"),
+		businessBtn: document.getElementById("businessBtn"),
+		sendBtn: document.getElementById("sendBtn")
+	}
+
+	var subMenus = {
+		personalBtn: document.getElementById("submenu-personal"),
+		businessBtn: document.getElementById("submenu-business"),
+		sendBtn: document.getElementById("submenu-send")
+	};
+
+	var lastBtnClicked;
+	menuBtns.addEventListener('click', openHideMenu);
+
+	function openHideMenu(ev) {
+		var classes = header.classList;
+		var targetId = ev.target.id;
+		if(targetId != "personalBtn" && targetId != "businessBtn" && targetId != "sendBtn")
+			return 0;
+		if(classes.length === 0) {
+			classes.add('menu-open');
+			openHideSubMenu(targetId, true, true);
+			mainMenuBtns[targetId].classList.add("open");
+			closeBtn.classList.add("open");
+		} else {
+			if(classes.contains('menu-open')) {
+				if(lastBtnClicked == targetId) {
+					classes.remove('menu-open');
+					classes.add('menu-close');
+					openHideSubMenu(targetId, false, true);
+					mainMenuBtns[targetId].classList.remove("open");
+					closeBtn.classList.remove("open");
+				} else {
+					openHideSubMenu(lastBtnClicked, false, false);
+					openHideSubMenu(targetId, true, false);
+					mainMenuBtns[targetId].classList.add("open");
+					mainMenuBtns[lastBtnClicked].classList.remove("open");
+				}
+
+			} else {
+				classes.remove('menu-close');
+				classes.add('menu-open');
+				openHideSubMenu(targetId, true, true);
+				mainMenuBtns[targetId].classList.add("open");
+				closeBtn.classList.add("open");
+			}
+		}
+		lastBtnClicked = targetId;
+	}
+
+	function openHideSubMenu(targetId, open, animate) {
+		var elm = subMenus[targetId];
+		if(!elm)
+			return 0;
+		var classes = elm.classList;
+		if(open) { // show the submenu
+			classes.remove('submenu-close');
+			if(animate) {
+				classes.add('submenu-open');
+			} else {
+				classes.add('submenu-done');
+			}
+		} else { // hide the sub-menu
+			classes.remove('submenu-open');
+			classes.remove('submenu-done');
+			if(animate) {
+				classes.add('submenu-close');
+			}
+		}
+	}
+
+	closeBtn.addEventListener('click', function() {
+		var ev = {};
+		ev.target = mainMenuBtns[lastBtnClicked];
+		openHideMenu(ev);
+	});
+
+
+
+</script>
+
+</body>
+</html>
