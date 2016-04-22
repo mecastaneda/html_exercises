@@ -12,8 +12,8 @@
 			}
 			.star {
 				display: inline-block;
-
-				background-size: contain;
+				background-image: url("stars.svg");
+				background-size: cover;
 				width: 30px;
 				height: 30px;
 				cursor: pointer;
@@ -23,12 +23,12 @@
 			.star-rating:hover .star:hover,
 			.star-rating:hover .star:hover ~ .star,
 			.stars:checked ~ .star {
-				background-image: url("star.svg");
+				background-position: 0 -30px;
 			}
 
 			.star,
 			.star-rating:hover .star  {
-				background-image: url("empty_star.svg");
+				background-position: 0 0;
 			}
 
 
