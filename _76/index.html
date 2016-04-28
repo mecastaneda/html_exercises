@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>76. Carousel</title>
+    <style media="screen">
+      #carousel {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+      #carousel > ul {
+        list-style: none;
+        font-size: 0;
+        overflow: hidden;
+        width: 300%;
+        position: relative;
+        left: -1000px;
+        padding: 0;
+        animation: play 10s infinite ease-in;
+      }
+      #carousel > ul > li {
+        box-sizing: border-box;
+        width: 500px;
+        height: 300px;
+        display: inline-block;
+        float: right;
+      }
+      #slide1 {
+        background-image: url("img1.jpg");
+      }
+      #slide2 {
+        background-image: url("img2.jpg");
+      }
+      #slide3 {
+        background-image: url("img3.jpg");
+      }
+
+      @keyframes play {
+        0% {
+          left: -1000px;
+        }
+        30% {
+          left: -1000px;
+        }
+        34% {
+          left: -500px;
+        }
+        64% {
+          left: -500px;
+        }
+        68% {
+          left: 0%
+        }
+        98% {
+          left: 0%;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id='carousel'>
+      <ul>
+        <li id="slide1">Slide1</li>
+        <li id="slide2">Slide2</li>
+        <li id="slide3">Slide3</li>
+      </ul>
+  </div>
+  </body>
+</html>
