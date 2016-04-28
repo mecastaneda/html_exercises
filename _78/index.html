@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>78. Layout</title>
+    <style media="screen">
+      html {
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        width: 900px;
+        margin: 0 auto;
+        height: 100%;
+      }
+      header {
+        height: 80px;
+        background-color: #36098b;
+        box-sizing: border-box;
+      }
+      header > h1 {
+        position: relative;
+        margin: 0;
+        padding: 10px 0 0 10px;
+      }
+      header > nav {
+        margin-top: 5px;
+        text-align: center;
+      }
+      header > nav > span {
+        display: inline-block;
+        width: 25%;
+        color: white;
+      }
+      .main {
+        background-color: #980b34;
+        height: 80%;
+      }
+      .main > section {
+        float: left;
+        width: 40%;
+        background-color: #0889e0;
+        height: 100%;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .main > .sidepane {
+        float: left;
+        height: 100%;
+        width: 20%;
+        background-color: #db3061;
+      }
+      footer {
+        height: 200px;
+        background-color: #52db8b;
+        text-align: center;
+      }
+      footer span {
+        top: 50%;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Title</h1>
+      <nav>
+        <span>Home</span><span>FAQ</span><span>Contact Us</span><span>About</span>
+      </nav>
+    </header>
+    <div class="main">
+      <section>
+
+      </section>
+      <section>
+
+      </section>
+      <aside class="sidepane">
+
+      </aside>
+    </div>
+    <footer><span>Copyright 2016</span></footer>
+  </body>
+</html>
